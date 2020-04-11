@@ -1,39 +1,22 @@
-# Parsing--
 
-# Project Title
+# Parsing Different formats in C 
 
-One Paragraph of project description goes here
+Simple Parsers in C for csv and json format
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+The JSON parser uses a library json-c which can be installed on a Linux system using the following command:
+sudo apt install libjson-c-dev
 
-Say what the step will be
 
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
+After downloading the C codes and the sample test files, run:
 
-Explain how to run the automated tests for this system
+1. CSV Parser:  gcc csvparser.c -Wall -o csv_parser
+                ./csv_parser
+2. JSON Parser: gcc jsonparser.c -ljson-c -o testjson
+                ./testjson
+                
+
